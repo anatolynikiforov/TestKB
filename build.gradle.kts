@@ -21,21 +21,27 @@ configurations {
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("com.vladmihalcea:hibernate-types-52:2.9.7")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.2")
+    implementation("org.jetbrains.exposed", "exposed-core", "0.22.1")
+    implementation("org.jetbrains.exposed", "exposed-dao", "0.22.1")
+    implementation("org.jetbrains.exposed", "exposed-jdbc", "0.22.1")
+    implementation("org.jetbrains.exposed", "exposed-java-time", "0.22.1")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
-    testCompile ("org.testcontainers:postgresql:1.13.0")
+    testCompile("org.testcontainers:postgresql:1.13.0")
 }
 
 tasks.withType<Test> {

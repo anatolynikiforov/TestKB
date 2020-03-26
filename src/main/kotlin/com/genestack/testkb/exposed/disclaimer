@@ -1,0 +1,3 @@
+Here should be exposed example. But Exposed framework is very raw at the moment.
+It doesn't support array and json types, writing native sql is quite hard
+So I didn't manage to write same examples as I did for hibernate and mybatis

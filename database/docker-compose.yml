@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:12
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: dratuti
+      POSTGRES_PASSWORD: dratuti
+      POSTGRES_DB: testkb
+    command: postgres -c shared_preload_libraries=pg_stat_statements
+
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./initdb.d:/docker-entrypoint-initdb.d
+
+
+volumes:
+  db-data:

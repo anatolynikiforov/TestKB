@@ -1,6 +1,5 @@
 spring:
   datasource:
-    continue-on-error: true # TODO: remove
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5433/testkb
     username: dratuti
