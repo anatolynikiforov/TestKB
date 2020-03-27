@@ -2,9 +2,7 @@ package com.genestack.testkb.mybatis.controllers
 
 import com.genestack.testkb.controllers.GlobalVersionsController
 import com.genestack.testkb.dto.GlobalVersionInputDto
-import com.genestack.testkb.hibernate.models.HibernateGlobalVersion
 import com.genestack.testkb.mybatis.mappers.GlobalVersionsMapper
-import com.genestack.testkb.mybatis.models.MybatisDocument
 import com.genestack.testkb.mybatis.models.MybatisGlobalVersion
 import com.genestack.testkb.mybatis.services.MybatisGlobalVersionsService
 import org.springframework.beans.factory.annotation.Autowired

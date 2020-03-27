@@ -1,11 +1,10 @@
 package com.genestack.testkb.mybatis.mappers
 
-import com.genestack.testkb.hibernate.models.HibernateDocument
 import com.genestack.testkb.mybatis.models.MybatisDocument
-import org.apache.ibatis.annotations.*
-import org.apache.ibatis.type.ArrayTypeHandler
-import org.springframework.data.jpa.repository.Modifying
-import org.springframework.data.jpa.repository.Query
+import org.apache.ibatis.annotations.Mapper
+import org.apache.ibatis.annotations.Param
+import org.apache.ibatis.annotations.Select
+import org.apache.ibatis.annotations.Update
 import java.sql.Timestamp
 
 @Mapper

@@ -1,8 +1,6 @@
 package com.genestack.testkb.mybatis.controllers
 
 import com.genestack.testkb.controllers.DocumentsController
-import com.genestack.testkb.controllers.GlobalVersionsController
-import com.genestack.testkb.hibernate.models.HibernateDocument
 import com.genestack.testkb.mybatis.mappers.DocumentsMapper
 import com.genestack.testkb.mybatis.models.MybatisDocument
 import com.genestack.testkb.mybatis.services.MybatisDocumentsService

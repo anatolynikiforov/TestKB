@@ -1,9 +1,6 @@
 package com.genestack.testkb.mybatis.services
 
 import com.genestack.testkb.dto.GlobalVersionInputDto
-import com.genestack.testkb.hibernate.models.HibernateGlobalVersion
-import com.genestack.testkb.hibernate.repositories.DocumentsRepository
-import com.genestack.testkb.hibernate.repositories.GlobalVersionsRepository
 import com.genestack.testkb.mybatis.mappers.DocumentsMapper
 import com.genestack.testkb.mybatis.mappers.GlobalVersionsMapper
 import com.genestack.testkb.mybatis.models.MybatisGlobalVersion
